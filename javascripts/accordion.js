@@ -111,8 +111,8 @@ var Accordion = Class.create({
     if (comingSection.disabled) return;
     comingSection.elements.toggle.blindDown(
       this.accordionEffectOptions.merge({
-        afterFinish: comingSection.setVisible.bind(comingSection)
-      }).toObject()
+        afterFinish: comingSection.setVisible()
+      })
     );
   },
   
